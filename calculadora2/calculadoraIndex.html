@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculadora dos</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+    
+    <div><center><h1>CALCULADORA</h1></center></div>
+        <h4>CALCULAR LA SUMA</H4>
+        <h4>CALCULAR LA RESTA</H4>
+        <h4>CALCULAR LA MULTIPLICACION</H4>
+        <h4>CALCULAR LA DIVISION</H4>
+        <h4>CALCULAR LA RAIZ</H4>
+        <h4>CALCULAR LA POTENCIACION</H4>
+        <br>
+<body>
+  <input type="text" id="n11" placeholder="n1">
+  <input type="text" id="n22" placeholder="n2">
+  
+  <select id="op" value="+">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+      <option value="√">√</option>
+      <option value="^">^</option>
+
+  </select>
+        <button id="calcular2">Calcular</button>
+        <br>
+        <br>
+        <output id="r2"></output>
+        </br>
+  <script>
+        document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        const op2 = document.querySelector('#op').value;
+        let r;
+          if(op2 == '+'){
+              r = n1 + n2;
+            }else if( op2 == '-'){
+              r = n1 - n2;
+            }else if(op2 == '*'){
+              r = n1 * n2;
+            }else if(op2 == '/'){
+              r = n1 / n2;
+          }else if(op2 == '%'){
+              r = (n1 * n2)/100;
+          }else if(op2 == '√'){
+              r = Math.sqrt(n1);
+          }else if(op2 == '^'){
+              r = Math.round(n1,n2);
+          }
+        document.querySelector('#r2').innerHTML = r;
+      });
+  </script>
+</body>
+</html>

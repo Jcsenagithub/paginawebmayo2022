@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NASA</title>
+
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[YOUR_BING_MAPS_KEY]' async defer>
+    </script>
+
+    <script type='text/javascript'>
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#myMap');
+        }
+    </script>
+</head>
+<h2>VISITAS:</h2>
+<h2 id="visitas"></h2>
+FECHA:
+<h2 id="fecha"></h2>
+<script>
+    (function() {
+        var fecha = new Date();
+        document.write(fecha);
+        console.log(fecha.getHours);
+    }());
+</script>
+
+</script>
+<br><br>
+
+<a target="_blank" href="https://hotelmix.es/weather/bogota-18970">
+    <img src="https://w.bookcdn.com/weather/picture/1_18970_1_4_137AE9_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=582&anc_id=33769" alt="booked.net" />
+</a>
+
+<div>
+    <h1>
+        <center>INTELIGENCIA ARTIFICIAL</center>
+        <center><img src="./imagenes/saturno.jpg" height="300" alt="100"></center>
+    </h1>
+
+    <br><br>
+</div>
+
+<body>
+
+
+    <br><br><br><br><br><br><br> ¿QUIERES APRENDER OPERACIONES CON LA CALCULADORA?</br>
+    Da click en calculadora --->
+
+    <a href="./calculadora2/calculadoraIndex.html">
+        <h2>CALCULADORA</h2>
+    </a><br>
+
+    <link rel="stylesheet" href="index.css">
+    <link href="./imagenes/viajemartesonda.jpg">
+
+    <h2>MENÚ GALERIAS</h2>
+    <a href="./galeriaUno.html">Exoplanetas
+    <br>
+    <a href="./galeriaDos.html" target="_blank">Xpace
+    <br>
+    <a href="./quien_somos.html" target="_blank">Quienes Somos
+
+    <br><br> CLIK EN LA IMÁGEN PARA IR AL ENLACE</br>
+    <a href="https://www.nasa.gov/"><img src="./imagenes/conquistaHombre.jpg" height="90" alt="90" style="content-visibility:center;"></a>
+    <br>
+
+    <a href="https://www.nasa.gov/">
+    </a>
+
+    <center>
+        <h2><b>ELEMENTOS QUE UTILIZA LA NASA</b>
+        </h2>
+    </center>
+
+    <ul>
+        <li>TRANSBORDADOR</li>
+        <li>ESTACION ESPACIAL</li>
+        <li>NAVES TRIPULADAS</li>
+        <li>ASTRONAUTAS</li>
+        <li>INGENIEROS</li>
+    </ul>
+
+    <center>
+        <h2>ELEMENTOS QUE UTILIZA LA NASA</h2>
+    </center>
+
+    <ol>
+        <li>TRANSBORDADOR</li>
+        <li>ESTACION ESPACIAL</li>
+        <li>NAVES TRIPULADAS</li>
+        <li>ASTRONAUTAS</li>
+        <li>INGENIEROS</li>
+    </ol>
+    <center>
+        <h2>CONOCE NUESTRO MAPA DE NAVEGACION</h2>
+    </center>
+    <center>
+        <div id="myMap" style="position:relative;width:800px;height:200px;"></div>
+    </center>
+    <br><br><br>
+    <script>
+        let visitasActuales = localStorage.getItem("visitas");
+        if (visitasActuales) {
+            let aumento = parseInt(visitasActuales) + 1;
+            localStorage.setItem("visitas", aumento);
+            document.getElementById("visitas").innerHTML = aumento;
+        } else {
+            localStorage.setItem("visitas", 1);
+            document.getElementById("visitas").innerHTML = 1;
+        }
+        //*LocalStrorage nos indica que datos almacenar
+        //*Contador de visitas
+        localStorage.setItem("visitas");
+        let numerodeVisitas = localStorage.getItem("visitas");
+        document.getElementById("visitas").innerHTML = numerodeVisitas;
+        console.log(localStorage.getItem("nombre"));
+    </script>
+
+</body>
+
+</html>

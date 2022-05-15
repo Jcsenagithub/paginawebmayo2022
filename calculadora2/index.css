@@ -1,0 +1,74 @@
+html {
+  background-color: #064b4f;
+  justify-content: center;
+  padding: auto;
+}
+
+body {
+  width: 600px;
+  margin-right: 50px;
+  background-color: #1b7178;
+  padding: 10px 20px 20px;
+  border: 10px solid rgb(10, 154, 99);
+}
+
+button {
+    cursor: pointer;
+    background-color: #00f2ff; /* Green */
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display:contents;
+    font-size: 16px;
+    margin: 2px 2px;
+}
+
+output{
+    background-color: #00f7ff;
+    border-radius:0em;
+    color: rgb(0, 0, 0);
+    padding: 25px 2px;
+    text-align:justify;
+    text-decoration: none;
+    display:flex;
+    font-size: 26px;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #ffffff;
+  font-style: initial;
+}
+
+h4 {
+  margin: 0;
+  padding: 2px 0;
+  color: #fbff00;
+  font-style: initial;
+}
+
+option{
+  margin: 0;
+  padding: 20px 0;
+  color: #000dff;
+  font-style: initial;
+  border: radius 10px;;
+}
+
+select{
+  display:flex; 
+	padding: 20px 20px;
+	color: white;
+	position:relative;
+	top: 80%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 5vw;
+	transition: all .5s;
+	background-color: #3498db;
+}

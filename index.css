@@ -1,0 +1,41 @@
+body {
+    height: 0%;
+    background-image: url("./imagenes/fondoDos.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+h1 {
+    font-family: monospace fantasy;
+    color: rgb(197, 162, 7);
+    height: 190px;
+    margin: auto;
+}
+
+h2 {
+    font-family: monospace fantasy;
+    color: rgb(197, 162, 7);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 255, 0);
+    margin: auto;
+    text-align-last: center;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+    margin: auto;
+    text-align-last: left;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    margin: auto;
+    text-align-last: left;
+}
